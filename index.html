@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhalak Rastogi - Image Techniques and Interpretation Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Jhalak Rastogi</h2>
+                <span>M.Sc. Geoinformatics</span>
+            </div>
+            <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <button class="nav-btn active" data-tab="home"><i class="fas fa-home"></i> Home</button>
+                <button class="nav-btn" data-tab="about"><i class="fas fa-user"></i> About Me</button>
+                <button class="nav-btn" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+                <button class="nav-btn" data-tab="skills"><i class="fas fa-laptop-code"></i> My Skills</button>
+                <button class="nav-btn" data-tab="learning"><i class="fas fa-eye"></i> Practical Learning</button>
+                <button class="nav-btn" data-tab="reflection"><i class="fas fa-brain"></i> Reflection</button>
+                <button class="nav-btn" data-tab="contact"><i class="fas fa-envelope"></i> Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+
+        <!-- HOME TAB -->
+        <section id="home" class="tab-content active">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <span class="badge">Academic E-Portfolio</span>
+                    <h1>Image Techniques & Interpretation</h1>
+                    <p class="subtitle">Remote Sensing Imagery, Spectral Bands, Georeferencing & LULC Mapping</p>
+                    <p class="intro-p">Welcome! This portfolio documents my academic learning, practical hands-on image interpretation workflows, and personal reflections for the Image Techniques and Interpretation course at BVIEER, Pune.</p>
+                    <div class="hero-btns">
+                        <button class="btn btn-primary" onclick="switchTab('learning')">Explore Practical Work</button>
+                        <button class="btn btn-secondary" onclick="switchTab('reflection')">Read Reflections</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-bullseye"></i> Portfolio Purpose</h3>
+                    <p>Demonstrating foundational skills in satellite image interpretation and digital processing, covering spatial georeferencing, natural and false color composite creation, and Land Use/Land Cover (LULC) mapping.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-university"></i> Institution</h3>
+                    <p><strong>Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER)</strong><br>M.Sc. Geoinformatics (2026–2028)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME TAB -->
+        <section id="about" class="tab-content">
+            <div class="card">
+                <div class="section-header">
+                    <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+                    <p>Academic Background & Focus</p>
+                </div>
+                <p>Hello! I am <strong>Jhalak Rastogi</strong>, a postgraduate student pursuing a <strong>Master of Science in Geoinformatics</strong> at the Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER) in Pune, Maharashtra.</p>
+                
+                <p>Having earned my Bachelor's degree in Geography Honours from Amity University, Noida, my academic interests focus on physical geography, environmental analysis, and earth observation. Through my current postgraduate studies, I am strengthening my geographical understanding with digital image processing techniques and satellite imagery analysis.</p>
+                
+                <p>In the <em>Image Techniques and Interpretation</em> subject, my goal is to develop expertise in extracting meaningful surface information from satellite imagery. By engaging in practical exercises such as spatial georeferencing, true and false color composite rendering, visual image interpretation elements, and Land Use/Land Cover (LULC) classification, I seek to build a strong analytical foundation for environmental research and geospatial applications.</p>
+                
+                <div class="info-pills">
+                    <span class="pill"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION TAB -->
+        <section id="education" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Academic Education</h2>
+                <p>Qualifications & Coursework</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <span class="year-badge">2026 – Present</span>
+                        <h3>Master of Science in Geoinformatics</h3>
+                        <p class="institution">Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER), Pune</p>
+                        <p>Focusing on satellite image interpretation, digital image processing, spatial georeferencing, remote sensing, and GIS mapping.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <span class="year-badge">Completed</span>
+                        <h3>Bachelor of Arts (Honours) in Geography</h3>
+                        <p class="institution">Amity University, Noida</p>
+                        <p>Gained a strong foundation in physical geography, spatial cartography, human geography, and environmental studies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS TAB -->
+        <section id="skills" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+                <p>Software, Image Processing & Geospatial Tools</p>
+            </div>
+            <div class="grid-2">
+                <div class="card skill-card">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>GIS & RS Platforms</h3>
+                    <ul>
+                        <li>ArcGIS Pro</li>
+                        <li>QGIS</li>
+                        <li>SAGA GIS</li>
+                        <li>Google Earth Pro</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <div class="skill-icon"><i class="fas fa-satellite"></i></div>
+                    <h3>Image Interpretation Skills</h3>
+                    <ul>
+                        <li>Georeferencing & GCP Alignment</li>
+                        <li>True & False Color Composites</li>
+                        <li>Visual Image Interpretation Elements</li>
+                        <li>LULC Classification & Digitization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICAL LEARNING TAB -->
+        <section id="learning" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-eye"></i> Practical Learning in Class</h2>
+                <p>Image Processing & Interpretation Techniques Mastered</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 01</div>
+                    <h3><i class="fas fa-map-marked-alt"></i> Satellite Image Georeferencing</h3>
+                    <p>Learned how to align unprojected satellite imagery and scanned maps to real-world coordinate reference systems using Ground Control Points (GCPs), evaluating transformation RMS errors to ensure high geometric accuracy.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 02</div>
+                    <h3><i class="fas fa-palette"></i> True & False Color Composites</h3>
+                    <p>Mastered combining spectral bands to render True Color Composites (TCC) and Standard False Color Composites (FCC). Learned how shifting band combinations enhances vegetation vigor, water body boundaries, and urban structures.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 03</div>
+                    <h3><i class="fas fa-search-location"></i> Visual Image Interpretation</h3>
+                    <p>Applied core visual interpretation keys—including tone, color, texture, pattern, shape, size, shadow, and association—to differentiate complex land features across satellite scenes during practical lab sessions.</p>
+                </div>
+
+                <div class="card learning-card">
+                    <div class="learning-tag">Module 04</div>
+                    <h3><i class="fas fa-globe-americas"></i> LULC Mapping & Feature Extraction</h3>
+                    <p>Executed Land Use Land Cover (LULC) vector mapping through systematic heads-up digitization and image classification, categorizing distinct environmental surface classes such as dense vegetation, water bodies, built-up areas, and bare soil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLECTION TAB -->
+        <section id="reflection" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-brain"></i> Subject Reflection</h2>
+                <p>Image Techniques and Interpretation — Personal & Practical Reflections</p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-book-reader"></i> Practical & Personal Learning Reflection</h3>
+                <div class="meta-info">
+                    <span><strong>Subject:</strong> Image Techniques and Interpretation</span> | 
+                    <span><strong>Semester:</strong> M.Sc. Semester I</span> | 
+                    <span><strong>Software:</strong> GIS & Remote Sensing Tools</span>
+                </div>
+                <hr class="divider">
+                
+                <p>Prior to studying <em>Image Techniques and Interpretation</em>, my understanding of satellite imagery was mostly limited to viewing pre-processed maps and aerial views. Engaging with raw satellite data in this subject shifted my perspective from observing static imagery to analyzing spectral surface information systematically.</p>
+
+                <p>Our practical laboratory exercises focused on foundational image processing techniques: aligning unprojected rasters through georeferencing, creating True and False Color Composites (FCC), and performing Land Use/Land Cover (LULC) mapping. Working with Standard False Color Composites showed me how near-infrared spectral bands highlight healthy vegetation density that remains invisible to the human eye, while georeferencing taught me the crucial importance of Ground Control Points (GCPs) in establishing spatial accuracy.</p>
+
+                <p>My main practical challenge initially lay in minimizing Root Mean Square (RMS) errors during georeferencing and resolving boundary ambiguities between similar spectral classes, such as fallow land versus sparse vegetation during LULC digitization. Overcoming these difficulties required carefully evaluating spatial resolution, checking GCP distribution, and cross-referencing visual interpretation keys like texture and association.</p>
+
+                <p>This hands-on experience provides a strong foundation for advanced digital image processing, environmental monitoring, and change detection analysis in future research and professional geoinformatics projects.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT TAB -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+                <p>Get in Touch</p>
+            </div>
+            <div class="card contact-card">
+                <h3><i class="fas fa-user-circle"></i> Jhalak Rastogi</h3>
+                <p class="contact-sub">M.Sc. Geoinformatics Student</p>
+                <p>Bharati Vidyapeeth Institute of Environment Education and Research (BVIEER), Pune</p>
+                <hr class="divider">
+                <div class="contact-links">
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:rastogijhalak26@gmail.com">rastogijhalak26@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jhalak-rastogi-31b81b21b/" target="_blank" rel="noopener noreferrer">Jhalak Rastogi on LinkedIn</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Pune, Maharashtra, India</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Jhalak Rastogi | Image Techniques and Interpretation E-Portfolio | BVIEER, Pune</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
